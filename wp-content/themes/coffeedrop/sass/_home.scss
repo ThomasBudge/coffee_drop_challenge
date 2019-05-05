@@ -1,0 +1,136 @@
+body.page{
+    margin:0;
+}
+#landing-container{
+    height:100vh;
+    width:100%;
+    background-size:cover;
+    background-position: 60% 0%;
+    position: relative;
+    overflow: hidden;
+    @media screen and (min-width: $md) {
+        height:450px;
+        background-position: 30% 0%;
+    }
+    @media screen and (min-width: $lg) {
+        height:500px;
+        background-position: 30% 0%;
+    }
+    #landing-text{
+        padding-top:100px;
+        h1{
+            color:#FFF;
+        }
+        @media screen and (min-width: $lg) {
+            padding-top:160px;
+        }
+    }
+    #app-store-logos{
+        img{
+            width:180px;
+            margin-top:10px;
+            @media screen and (min-width: $md) {
+                width:140px;
+                display:block;
+            }
+            @media screen and (min-width: $lg) {
+                display:inline-block;
+            }
+        }
+    }
+    img#app-mockup{
+        position: absolute;
+        bottom: -15%;
+        left: -40%;
+        width: 160%;
+        max-width: none;
+        @media screen and (min-width: $md) {
+            position: relative;
+            left:auto;
+            right:auto;
+            bottom:0;
+            top: -240px;
+            float:right;
+            width:560px;
+        }
+        @media screen and (min-width: $lg) {
+            top: -280px;
+            width:640px;
+        }
+    }
+}
+#how-it-works-container{
+    text-align: center;
+    padding:80px 0;
+    img.right-arrow{
+        position: absolute;
+        top: 30%;
+        left: 92%;
+        width:60px;
+        @media screen and (min-width: $md) {
+            left: 87%;
+        }
+    }
+    .how-it-works-inner{
+        margin-top:30px;
+        img{
+            margin-bottom:10px;
+        }
+        p{
+            color:#4A4A4A;
+        }
+    }
+}
+#prices-container{
+    padding:80px 0 120px 0;
+    h2{
+        color:#fff;
+    }
+    h3{
+        font-size:16px;
+        margin-bottom:12px;
+    }
+    h2, h3{
+        text-align: center;
+    }
+    .prices-inner{
+        margin-top:30px;
+        img.coffee-bean-icon{
+            position: absolute;
+            left:0;
+            right:0;
+            margin:0 auto;
+            width:30px;
+            bottom:0;
+            @media screen and (min-width: $md) {
+                width:25px;
+            }
+        }
+    }
+    .table{
+        background-color:#4E4E4E;
+        border-radius:4px;
+        ul{
+            margin:0;
+            padding:0;
+            li{
+                list-style-type:none;
+                padding:12px 20px;
+                p{
+                    color:#fff;
+                    margin:0;
+                }
+                &:nth-child(even){
+                    background-color:#626262;
+                    border-radius:4px;
+                }
+            }
+        }
+    }
+}
+#map-container{
+    #map{
+        width:100%;
+        height:500px;
+    }
+}
